@@ -115,42 +115,47 @@ body {
 .ot-letter-bottom span:after { color: #e95949; }
 .ot-letter-bottom:hover span:after { color: #eb6e60; }*/
 
-/*.blue { background: #5BC0EB; } 
+.blue { background: #5BC0EB; } 
 .blue span { text-shadow: 1px 4px 6px #5BC0EB, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #5BC0EB; }
-.blue span:after { color: #5BC0EB; }
-.blue:hover span:after { color: #81CAEA; }
+.blue span:after { color: white; }
+.blue:hover span:after { color: white; }
 
 .yellow { background: #FDE74C; }
 .yellow span { text-shadow: 1px 4px 6px #FDE74C, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #FDE74C; }
-.yellow span:after { color: #FDE74C; }
-.yellow:hover span:after { color: #FCEE88; }
+.yellow span:after { color: white; }
+.yellow:hover span:after { color: white; }
 
 .green { background: #9BC53D; }
 .green span { text-shadow: 1px 4px 6px #9BC53D, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #9BC53D; }
-.green span:after { color: #9BC53D; }
-.green:hover span:after { color: #A8C46B; }
+.green span:after { color: white; }
+.green:hover span:after { color: white; }
 
 .red { background: #E55934; }
 .red span { text-shadow: 1px 4px 6px #E55934, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #E55934; }
-.red span:after { color: #E55934; }
-.red:hover span:after { color: #E5886E; }
+.red span:after { color: white; }
+.red:hover span:after { color: white; }
 
 .purple { background: #663ede; }
 .purple span { text-shadow: 1px 4px 6px #663ede, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #663ede; }
-.purple span:after { color: #663ede; }
-.purple:hover span:after { color: #765dc1; }
+.purple span:after { color: white; }
+.purple:hover span:after { color: white; }
 
 .pink { background: #d05bac; }
 .pink span { text-shadow: 1px 4px 6px #d05bac, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #d05bac; }
-.pink span:after { color: #d05bac; }
-.pink:hover span:after { color: #c173a9; }*/
+.pink span:after { color: white; }
+.pink:hover span:after { color: white; }
 
+.salmon { background: #f84257; }
+.salmon span { text-shadow: 1px 4px 6px #f84257, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #f84257; }
+.salmon span:after { color: white; }
+.salmon:hover span:after { color: white; }
 
+/*
 .white { background: #fafafa; }
 .white span { text-shadow: 1px 4px 6px #fafafa, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fafafa; }
 .white span:after { color: #fafafa; }
 .white:hover span:after { color: white; }
-
+*/
 
 /* Left */
 .ot-letter-left span:before,

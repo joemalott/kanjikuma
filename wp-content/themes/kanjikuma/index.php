@@ -29,19 +29,19 @@
 					$items = ['left', 'top', 'right', 'bottom'];
 					$position = $items[array_rand($items)];
 
-					$colors = ['white'];
+					$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
 					$color = $colors[array_rand($colors)];
 					
 					if ($previous == $color) {
-						$colors = ['white'];
+						$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
 						$color = $colors[array_rand($colors)];
 
 						if ($previous == $color) {
-							$colors = ['white'];
+							$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
 							$color = $colors[array_rand($colors)];
 
 							if ($previous == $color) {
-								$colors = ['white'];
+								$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
 								$color = $colors[array_rand($colors)];
 							} else {
 								$previous = $color;
