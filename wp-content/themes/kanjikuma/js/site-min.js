@@ -1,0 +1,1 @@
+window.fitText(document.getElementById("radical"),1.2);

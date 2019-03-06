@@ -1,0 +1,15 @@
+/*
+Theme Name: Kanji Kuma
+Author: Joe Malott
+Author URI: https://joemalott.com/
+Description: A theme for the kanjikuma app.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: kanjikuma
+*/
+
+
+body {
+	font-family: sans-serif;
+}
+
