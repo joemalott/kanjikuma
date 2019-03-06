@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 <?php
+
+$colors = ['#5BC0EB', '#E55934', '#d05bac', '#f84257', '#695190', '#384343', '#4f9f94' ];
+$color = $colors[array_rand($colors)];
+
 // Start the loop.
 while ( have_posts() ) : the_post();
 ?>
+<body style="background: <?php echo $color; ?>; color: white;">
 <div class="container margin-top">
 
 	<h4 class="back-button"><a href="/">&#8592; Back</a></h4>
@@ -82,4 +87,5 @@ while ( have_posts() ) : the_post();
 // End the loop.
 endwhile;
 ?>
+</body>
 <?php get_footer(); ?>

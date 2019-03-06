@@ -2,6 +2,9 @@
 
 body {
 	background: #fafafa;
+
+	font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ 
 }
 
 .title {
@@ -135,10 +138,6 @@ body {
 .red span:after { color: white; }
 .red:hover span:after { color: white; }
 
-.purple { background: #663ede; }
-.purple span { text-shadow: 1px 4px 6px #663ede, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #663ede; }
-.purple span:after { color: white; }
-.purple:hover span:after { color: white; }
 
 .pink { background: #d05bac; }
 .pink span { text-shadow: 1px 4px 6px #d05bac, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #d05bac; }
@@ -149,6 +148,29 @@ body {
 .salmon span { text-shadow: 1px 4px 6px #f84257, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #f84257; }
 .salmon span:after { color: white; }
 .salmon:hover span:after { color: white; }
+
+.fuschia { background: #695190; }
+.fuschia span { text-shadow: 1px 4px 6px #695190, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #695190; }
+.fuschia span:after { color: white; }
+.fuschia:hover span:after { color: white; }
+
+.grey { background: #384343; }
+.grey span { text-shadow: 1px 4px 6px #384343, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #384343; }
+.grey span:after { color: white; }
+.grey:hover span:after { color: white; }
+
+.aqua { background: #4f9f94; }
+.aqua span { text-shadow: 1px 4px 6px #4f9f94, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #4f9f94; }
+.aqua span:after { color: white; }
+.aqua:hover span:after { color: white; }
+
+.coral { background: #fab88d; }
+.coral span { text-shadow: 1px 4px 6px #fab88d, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fab88d; }
+.coral span:after { color: white; }
+.coral:hover span:after { color: white; }
+
+
+
 
 /*
 .white { background: #fafafa; }

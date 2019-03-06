@@ -8,4 +8,3 @@
 	<meta name="description" content="Kanji Kuma is a resource for learning Japanese Kanji radicals." />
 	<?php wp_head(); ?>
 </head>
-<body>

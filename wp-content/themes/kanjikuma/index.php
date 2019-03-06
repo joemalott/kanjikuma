@@ -3,13 +3,15 @@
 	$loop = new WP_Query( array(
 	'post_type' => 'Radical',
 	'posts_per_page' => -1,
-	'orderby' => array( 'post_date' => 'ASC' )
+	'orderby'   => 'meta_value_num',
+		'meta_key'  => 'radical_options_stroke_count',
+	'order'     => 'ASC',
 	)
 	);
 
 	$previous = " ";
 ?>
-
+<body>
 <div class="container">
 	<div class="component">
 
@@ -29,19 +31,19 @@
 					$items = ['left', 'top', 'right', 'bottom'];
 					$position = $items[array_rand($items)];
 
-					$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
+					$colors = ['red', 'blue', 'green', 'yellow', 'pink', 'salmon', 'fuschia', 'grey', 'aqua', 'coral'];
 					$color = $colors[array_rand($colors)];
 					
 					if ($previous == $color) {
-						$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
+						$colors = ['red', 'blue', 'green', 'yellow', 'pink', 'salmon', 'fuschia', 'grey', 'aqua', 'coral'];
 						$color = $colors[array_rand($colors)];
 
 						if ($previous == $color) {
-							$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
+							$colors = ['red', 'blue', 'green', 'yellow', 'pink', 'salmon', 'fuschia', 'grey', 'aqua', 'coral'];
 							$color = $colors[array_rand($colors)];
 
 							if ($previous == $color) {
-								$colors = ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'salmon'];
+								$colors = ['red', 'blue', 'green', 'yellow', 'pink', 'salmon', 'fuschia', 'grey', 'aqua', 'coral'];
 								$color = $colors[array_rand($colors)];
 							} else {
 								$previous = $color;
@@ -67,5 +69,5 @@
 		</ul>
 	</div>
 </div>
-
+</body>
 <?php get_footer(); ?>

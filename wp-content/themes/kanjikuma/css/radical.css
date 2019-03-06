@@ -191,13 +191,13 @@ p {
 
 .back-button a {
   text-decoration: none;
-  color: black;
+  color: white;
   border-bottom: 2px solid transparent;
   transition: all 1s ease;
 }
 
 .back-button a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   transition: all 1s ease;
 }
 
