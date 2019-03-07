@@ -106,7 +106,7 @@ while ( have_posts() ) : the_post();
       $previd = $ids[$thisindex-1];
       $nextid = $ids[$thisindex+1];
       if ( !empty($previd) ) {
-         echo '<h4><a href="' . get_permalink($previd). '">&#8592; Previous</a></h4>';
+         echo '<h4><a href="' . get_permalink($previd). '">&#8592; Prev</a></h4>';
       }
       if ( !empty($nextid) ) {
          echo '<h4><a href="' . get_permalink($nextid). '">&#8594; Next</a></h4>';

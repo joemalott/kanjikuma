@@ -183,7 +183,7 @@ p {
 
 
 .back-button {
-    text-align: right;
+    text-align: left;
     position: fixed;
     display: inline-block;
     right: 2rem;
