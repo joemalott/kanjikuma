@@ -66,6 +66,11 @@
 			
 			<?php endwhile; wp_reset_query(); endif; ?>
 			
+      <li class="blue hidden-one">&nbsp;</li>
+      <li class="green hidden-two">&nbsp;</li>
+      <li class="grey hidden-three">&nbsp;</li>
+      <li class="salmon hidden-four">&nbsp;</li>
+      
 		</ul>
 	</div>
 </div>
