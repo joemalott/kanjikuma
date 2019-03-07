@@ -9,8 +9,7 @@ while ( have_posts() ) : the_post();
 ?>
 <body style="background: <?php echo $color; ?>; color: white;">
 <div class="container margin-top">
-
-	<h4 class="back-button"><a href="/">&#8592; Back</a></h4>
+ 
 	
 	<div class="row">
 		
@@ -73,7 +72,7 @@ while ( have_posts() ) : the_post();
 				} else { ?>
 				<div class="col">
 					<h4><strong>Examples</strong></h4>
-					<h4><?php echo radical_options_get_meta( 'radical_options_examples' ); ?></h4>
+					<h4 style="font-weight: 100;"><?php echo radical_options_get_meta( 'radical_options_examples' ); ?></h4>
 				</div>
 				<?php    }
 				?>
@@ -81,6 +80,42 @@ while ( have_posts() ) : the_post();
 			</div>
 		</div>
 	</div>
+  
+   <div class="back-button">
+    <h4><a href="/">&#8593; Back</a></h4>
+    <?php 
+    
+      // get_posts in same custom taxonomy
+      $postlist_args = array(
+         'post_type' => 'Radical',
+         'posts_per_page' => -1,
+	       'orderby'   => 'meta_value_num',
+		      'meta_key' => 'radical_options_stroke_count',
+	       'order'     => 'ASC',
+      ); 
+      $postlist = get_posts( $postlist_args );
+
+      // get ids of posts retrieved from get_posts
+      $ids = array();
+      foreach ($postlist as $thepost) {
+         $ids[] = $thepost->ID;
+      }
+
+      // get and echo previous and next post in the same taxonomy        
+      $thisindex = array_search($post->ID, $ids);
+      $previd = $ids[$thisindex-1];
+      $nextid = $ids[$thisindex+1];
+      if ( !empty($previd) ) {
+         echo '<h4><a href="' . get_permalink($previd). '">&#8592; Previous</a></h4>';
+      }
+      if ( !empty($nextid) ) {
+         echo '<h4><a href="' . get_permalink($nextid). '">&#8594; Next</a></h4>';
+      }
+     
+    ?>
+  </div>
+	
+  
 </div>
 
 <?php
