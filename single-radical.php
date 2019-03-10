@@ -82,7 +82,7 @@ while ( have_posts() ) : the_post();
 	</div>
   
    <div class="back-button">
-    <h4><a href="/">&#8593; Back</a></h4>
+    <h4><a href="/#<?php echo esc_html( get_the_title() ); ?>">&#8593; Back</a></h4>
     <?php 
     
       // get_posts in same custom taxonomy

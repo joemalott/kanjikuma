@@ -58,7 +58,7 @@
 					}
 			?>
 			
-			<li class=<?php echo "\"ot-letter-" . $position . " " . $color . "\"";?>>
+			<li id="<?php echo esc_html( get_the_title() ); ?>" class=<?php echo "\"ot-letter-" . $position . " " . $color . "\"";?>>
 				<a href="<?php echo esc_url( get_permalink() ); ?>">
 					<span data-letter="<?php echo esc_html( get_the_title() ); ?>"><?php echo esc_html( get_the_title() ); ?></span>
 				</a>
